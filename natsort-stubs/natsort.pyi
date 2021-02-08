@@ -1,7 +1,10 @@
-from natsort import utils as utils
-from natsort.ns_enum import NS_DUMB as NS_DUMB, ns as ns
-from typing import Any, Callable, Iterable, List, Optional, overload, Tuple, TypeVar
+# stdlib
+from typing import Any, Callable, Iterable, List, Optional, Tuple, TypeVar, overload
 
+# this package
+from natsort import utils as utils
+from natsort.ns_enum import NS_DUMB as NS_DUMB
+from natsort.ns_enum import ns as ns
 
 _T = TypeVar("_T")
 
@@ -23,15 +26,51 @@ def natsort_keygen(key: Optional[Callable[[Any], Any]] = ..., alg: ns = ...) -> 
 
 natsort_key: Callable  # TODO: matches rtype of above
 
-def natsorted(seq: Iterable[_T], key: Optional[Callable[[Any], Any]] = ..., reverse: bool = ..., alg: ns = ...) -> List[_T]: ...
-def humansorted(seq: Iterable[_T], key: Optional[Callable[[Any], Any]] = ..., reverse: bool = ..., alg: ns = ...) -> List[_T]: ...
-def realsorted(seq: Iterable[_T], key: Optional[Callable[[Any], Any]] = ..., reverse: bool = ..., alg: ns = ...) -> List[_T]: ...
-def index_natsorted(seq: Iterable, key: Optional[Callable[[Any], Any]] = ..., reverse: bool = ..., alg: ns = ...) -> Tuple[int, ...]: ...
-def index_humansorted(seq: Iterable, key: Optional[Callable[[Any], Any]] = ..., reverse: bool = ..., alg: ns = ...) -> Tuple[int, ...]: ...
-def index_realsorted(seq: Iterable, key: Optional[Callable[[Any], Any]] = ..., reverse: bool = ..., alg: ns = ...) -> Tuple[int, ...]: ...
+def natsorted(
+		seq: Iterable[_T],
+		key: Optional[Callable[[Any], Any]] = ...,
+		reverse: bool = ...,
+		alg: ns = ...,
+		) -> List[_T]: ...
+
+def humansorted(
+		seq: Iterable[_T],
+		key: Optional[Callable[[Any], Any]] = ...,
+		reverse: bool = ...,
+		alg: ns = ...,
+		) -> List[_T]: ...
+
+def realsorted(
+		seq: Iterable[_T],
+		key: Optional[Callable[[Any], Any]] = ...,
+		reverse: bool = ...,
+		alg: ns = ...,
+		) -> List[_T]: ...
+
+def index_natsorted(
+		seq: Iterable,
+		key: Optional[Callable[[Any], Any]] = ...,
+		reverse: bool = ...,
+		alg: ns = ...,
+		) -> Tuple[int, ...]: ...
+
+def index_humansorted(
+		seq: Iterable,
+		key: Optional[Callable[[Any], Any]] = ...,
+		reverse: bool = ...,
+		alg: ns = ...
+		) -> Tuple[int, ...]: ...
+
+def index_realsorted(
+		seq: Iterable,
+		key: Optional[Callable[[Any], Any]] = ...,
+		reverse: bool = ...,
+		alg: ns = ...,
+		) -> Tuple[int, ...]: ...
 
 @overload
 def order_by_index(seq: List[_T], index: Iterable[int], iter: bool = ...) -> List[_T]: ...
+
 @overload
 def order_by_index(seq: Iterable[_T], index: Iterable[int], iter: bool = ...) -> Iterable[_T]: ...
 

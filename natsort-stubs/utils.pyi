@@ -1,12 +1,30 @@
 # stdlib
 import pathlib
+from typing import (
+		Any,
+		Callable,
+		Iterable,
+		Iterator,
+		List,
+		Match,
+		Optional,
+		Pattern,
+		Tuple,
+		TypeVar,
+		Union,
+		overload
+		)
 
 # this package
-from natsort.compat.fastnumbers import fast_float as fast_float, fast_int as fast_int
-from natsort.compat.locale import get_decimal_point as get_decimal_point, get_strxfrm as get_strxfrm, get_thousands_sep as get_thousands_sep
-from natsort.ns_enum import NS_DUMB as NS_DUMB, ns as ns
-from natsort.unicode_numbers import digits_no_decimals as digits_no_decimals, numeric_no_decimals as numeric_no_decimals
-from typing import Any, Callable, Iterable, Iterator, List, Optional, overload, Pattern, Tuple, TypeVar, Union
+from natsort.compat.fastnumbers import fast_float as fast_float
+from natsort.compat.fastnumbers import fast_int as fast_int
+from natsort.compat.locale import get_decimal_point as get_decimal_point
+from natsort.compat.locale import get_strxfrm as get_strxfrm
+from natsort.compat.locale import get_thousands_sep as get_thousands_sep
+from natsort.ns_enum import NS_DUMB as NS_DUMB
+from natsort.ns_enum import ns as ns
+from natsort.unicode_numbers import digits_no_decimals as digits_no_decimals
+from natsort.unicode_numbers import numeric_no_decimals as numeric_no_decimals
 
 _T = TypeVar("_T")
 
@@ -73,4 +91,7 @@ def do_decoding(s: bytes, encoding: str) -> str: ...
 @overload
 def do_decoding(s: object, encoding: str) -> object: ...
 
-def path_splitter(s: Union[str, pathlib.Path], _d_match: Pattern = ...) -> Tuple: ...
+def path_splitter(
+		s: Union[str, pathlib.Path],
+		_d_match: Callable[[str, int, int], Optional[Match[str]]] = ...,
+		) -> Tuple: ...

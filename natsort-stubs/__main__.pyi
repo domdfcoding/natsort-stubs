@@ -1,5 +1,8 @@
-from natsort.utils import regex_chooser as regex_chooser
+# stdlib
 from typing import Any
+
+# this package
+from natsort.utils import regex_chooser as regex_chooser
 
 def main(*arguments: Any) -> None: ...
 def range_check(low: Any, high: Any): ...
