@@ -17,10 +17,8 @@ natsort-stubs
 
 	* - Tests
 	  - |actions_linux| |actions_windows| |actions_macos|
-	* - PyPI
-	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Activity
-	  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
+	  - |commits-latest| |commits-since| |maintained|
 	* - QA
 	  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
 	* - Other
@@ -54,22 +52,6 @@ natsort-stubs
 	:target: https://www.codefactor.io/repository/github/domdfcoding/natsort-stubs
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/natsort-stubs
-	:target: https://pypi.org/project/natsort-stubs/
-	:alt: PyPI - Package Version
-
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/natsort-stubs?logo=python&logoColor=white
-	:target: https://pypi.org/project/natsort-stubs/
-	:alt: PyPI - Supported Python Versions
-
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/natsort-stubs
-	:target: https://pypi.org/project/natsort-stubs/
-	:alt: PyPI - Supported Implementations
-
-.. |wheel| image:: https://img.shields.io/pypi/wheel/natsort-stubs
-	:target: https://pypi.org/project/natsort-stubs/
-	:alt: PyPI - Wheel
-
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/natsort-stubs
 	:target: https://github.com/domdfcoding/natsort-stubs/blob/master/LICENSE
 	:alt: License
@@ -88,10 +70,6 @@ natsort-stubs
 .. |maintained| image:: https://img.shields.io/maintenance/yes/2021
 	:alt: Maintenance
 
-.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/natsort-stubs
-	:target: https://pypi.org/project/natsort-stubs/
-	:alt: PyPI - Downloads
-
 .. |pre_commit_ci| image:: https://results.pre-commit.ci/badge/github/domdfcoding/natsort-stubs/master.svg
 	:target: https://results.pre-commit.ci/latest/github/domdfcoding/natsort-stubs/master
 	:alt: pre-commit.ci status
@@ -103,12 +81,12 @@ Installation
 
 .. start installation
 
-``natsort-stubs`` can be installed from PyPI.
+``natsort-stubs`` can be installed from GitHub.
 
 To install with ``pip``:
 
 .. code-block:: bash
 
-	$ python -m pip install natsort-stubs
+	$ python -m pip install git+https://github.com/domdfcoding/natsort-stubs
 
 .. end installation

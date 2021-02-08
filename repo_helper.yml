@@ -13,6 +13,7 @@ enable_conda: false
 stubs_package: true
 enable_tests: false
 enable_docs: false
+on_pypi: false
 
 python_versions:
  - 3.6
