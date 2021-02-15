@@ -72,14 +72,14 @@ def index_realsorted(
 def order_by_index(
 		seq: List[_T],
 		index: Iterable[int],
-		iter: bool = ...,  # noqa: A002
+		iter: bool = ...,  # noqa: A002  # pylint: disable=redefined-builtin
 		) -> List[_T]: ...
 
 @overload
 def order_by_index(
 		seq: Iterable[_T],
 		index: Iterable[int],
-		iter: bool = ...,  # noqa: A002
+		iter: bool = ...,  # noqa: A002  # pylint: disable=redefined-builtin
 		) -> Iterable[_T]: ...
 
 def numeric_regex_chooser(alg: ns) -> str: ...
