@@ -26,6 +26,14 @@ name = "Dominic Davis-Foster"
 email = "dominic@davis-foster.co.uk"
 
 
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/domdfcoding/natsort-stubs"
+"Issue Tracker" = "https://github.com/domdfcoding/natsort-stubs/issues"
+"Source Code" = "https://github.com/domdfcoding/natsort-stubs"
+
 [tool.importcheck]
 
 [tool.setuptools]
@@ -51,14 +59,6 @@ show_error_codes = true
 
 [tool.snippet-fmt]
 directives = [ "code-block",]
-
-[project.license]
-file = "LICENSE"
-
-[project.urls]
-Homepage = "https://github.com/domdfcoding/natsort-stubs"
-"Issue Tracker" = "https://github.com/domdfcoding/natsort-stubs/issues"
-"Source Code" = "https://github.com/domdfcoding/natsort-stubs"
 
 [tool.dependency-dash."requirements.txt"]
 order = 10
