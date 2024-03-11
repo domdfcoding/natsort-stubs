@@ -67,7 +67,7 @@ natsort-stubs
 	:target: https://github.com/domdfcoding/natsort-stubs/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2022
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2024
 	:alt: Maintenance
 
 .. end shields
