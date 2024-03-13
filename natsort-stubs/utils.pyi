@@ -16,15 +16,15 @@ from typing import (
 		)
 
 # this package
-from natsort.compat.fastnumbers import fast_float as fast_float
-from natsort.compat.fastnumbers import fast_int as fast_int
-from natsort.compat.locale import get_decimal_point as get_decimal_point
-from natsort.compat.locale import get_strxfrm as get_strxfrm
-from natsort.compat.locale import get_thousands_sep as get_thousands_sep
-from natsort.ns_enum import NS_DUMB as NS_DUMB
+from natsort.compat.fastnumbers import fast_float as fast_float  # noqa: F401
+from natsort.compat.fastnumbers import fast_int as fast_int  # noqa: F401
+from natsort.compat.locale import get_decimal_point as get_decimal_point  # noqa: F401
+from natsort.compat.locale import get_strxfrm as get_strxfrm  # noqa: F401
+from natsort.compat.locale import get_thousands_sep as get_thousands_sep  # noqa: F401
+from natsort.ns_enum import NS_DUMB as NS_DUMB  # noqa: F401
 from natsort.ns_enum import ns as ns
-from natsort.unicode_numbers import digits_no_decimals as digits_no_decimals
-from natsort.unicode_numbers import numeric_no_decimals as numeric_no_decimals
+from natsort.unicode_numbers import digits_no_decimals as digits_no_decimals  # noqa: F401
+from natsort.unicode_numbers import numeric_no_decimals as numeric_no_decimals  # noqa: F401
 
 _T = TypeVar("_T")
 

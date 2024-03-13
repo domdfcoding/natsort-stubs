@@ -2,8 +2,8 @@
 from typing import Any, Callable, Iterable, List, Optional, Tuple, TypeVar, overload
 
 # this package
-from natsort import utils as utils
-from natsort.ns_enum import NS_DUMB as NS_DUMB
+from natsort import utils as utils  # noqa: F401
+from natsort.ns_enum import NS_DUMB as NS_DUMB  # noqa: F401
 from natsort.ns_enum import ns as ns
 
 _T = TypeVar("_T")

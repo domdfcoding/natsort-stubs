@@ -2,7 +2,7 @@
 from typing import Any, Optional
 
 # this package
-from natsort.unicode_numbers import decimal_chars as decimal_chars
+from natsort.unicode_numbers import decimal_chars as decimal_chars  # noqa: F401
 
 NAN_INF: Any
 ASCII_NUMS: str

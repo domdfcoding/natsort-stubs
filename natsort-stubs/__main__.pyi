@@ -2,7 +2,7 @@
 from typing import Any
 
 # this package
-from natsort.utils import regex_chooser as regex_chooser
+from natsort.utils import regex_chooser as regex_chooser  # noqa: F401
 
 def main(*arguments: Any) -> None: ...
 def range_check(low: Any, high: Any): ...
